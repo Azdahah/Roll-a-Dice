@@ -1,6 +1,7 @@
 body{
     background-color: rgb(18, 84, 84);
   }
+  /* General container styling */
   .container{
     display: flex;
     height: 20vh;
@@ -8,13 +9,20 @@ body{
     align-items: center;
    
   }
+  /*Styling for Refresh button*/
   #refreshButton{
     height: 50px;
     width: 100px;
     border-radius: 10px;
     background-color:  rgb(0, 0, 0);
     color: rgb(243, 245, 245);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    font-size: 1rem;
   }
+   /*container for player*/
   .container1{
     display: flex;
     height: 40px;
@@ -22,10 +30,11 @@ body{
     align-items: center;
    
   }
+  /* Styling for the win text */
   .text{
     color: rgb(23, 25, 25);
     font-weight: bolder;
-    font-size: 9rem;
+    font-size: 6rem;
     font-family:'lobster',cursive;
     
   }
@@ -42,4 +51,7 @@ body{
     justify-items: center;
     font-size: 2rem;
     font-family:monospace;
+  }
+  #refreshButton:hover {
+    background-color: #0f0f0f;
   }
